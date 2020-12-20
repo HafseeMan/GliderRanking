@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bitely</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
+</head>
+<style>
+    :root{
+        --primary: #B3241B;
+        --secondary: #E99838;
+    }
+    body{
+        font-family: 'Quicksand';
+    }
+    .bg-primary{
+        background-color: var(--primary);
+    }
+    .text-primary{
+        color: var(--primary);
+    }
+    .text-secondary{
+        color: var(--secondary);
+    }
+    .btn-bg-trans{
+        background-color: rgba(255, 255, 255, 0.27);
+    }
+    .btn-border{
+        border: 3px solid var(--secondary);
+    }
+    .glass {
+        box-shadow: 0 0 16px rgba(0, 0, 0, .05); 
+        background-color: rgba(255, 255, 255, 0.104);    
+        backdrop-filter: blur(3px);
+        text-shadow: 0 0 10px rgba(0, 0, 0, .086);
+    }
+    @media screen and (min-width: 768px){
+        .headText{
+            font-size: 38px;
+            line-height: 38px;
+        }
+    }
+    @media screen and (max-width: 767px){
+        nav{
+            transition: .4s ease;
+        }
+        .nav-collapsed{
+            margin-top: -110%;
+            transition: .4s ease;
+        }
+    }
+    
+</style>
+<body>
+    <div class="h-screen bg-gray-50 divide-y-2 lg:flex">
+        <div class="lg:p-10 transition duration-500 p-6 bg-white shadow-xl lg:mx-auto lg:w-6/12 my-auto lg:w-max text-sm">
+            <div class="pt-6 border-b border-gray-100">
+                <h1 class="text-3xl font-bold">Sign Up</h1>
+                <h3>Your personal details</h3>
+            </div>
+            <div class="pt-4">
+                <h3 class="font-semibold">Name and Surname</h3>
+                <div class="lg:flex grid my-3">
+                    <input type="text" placeholder="Name" class="capitalize px-4 py-2 shadow-inner bg-gray-100 focus:outline-none lg:mr-2">
+                    <input type="text" placeholder="Surname" class="capitalize px-4 py-2 shadow-inner bg-gray-100 focus:outline-none my-2 lg:my-0">
+                </div>
+            </div>
+            <div class="pt-4">
+                <h3 class="font-semibold">Email Address</h3>
+                <input type="email" placeholder="username@example.com" class="px-4 py-2 shadow-inner bg-gray-100 focus:outline-none my-3 w-full">
+            </div>
+            <div class="pt-4">
+                <h3 class="font-semibold">Choose a password</h3>
+                <div class="my-3">
+                    <input type="password" placeholder="New Password" class="w-full px-4 py-2 shadow-inner bg-gray-100 focus:outline-none">
+                    <input type="password" placeholder="Confirm Password" class="w-full my-2 px-4 py-2 shadow-inner bg-gray-100 focus:outline-none">
+                </div>
+            </div>
+            <div class="full text-center">
+                <span class="py-3 text-red-400 mx-auto font-semibold w-full">Some error message!</span>
+            </div>
+            <button class="px-6 py-3 w-full bg-indigo-700 text-white my-2">Sign Up</button>
+            <a href="./login.html" class="text-gray-400 text-center">Already have an account?</a>
+        </div>
+        <div class="lg:block hidden half w-6/12">
+        </div>
+    </div>
+    <style>
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .half{
+            background-image: url('./img/razvan-cristea-FjPyDKQUkGE-unsplash.jpg');
+            background-size: cover;
+            background-position-y: center;
+            background-position-x: 22%;
+        }
+    </style>
+</body>
+</html>
