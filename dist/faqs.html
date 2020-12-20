@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glider Sport ranking system</title>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<style>
+    :root{
+        --primary: #B3241B;
+        --secondary: #E99838;
+    }
+    body{
+        font-family: 'Quicksand';
+    }
+    .bg-primary{
+        background-color: var(--primary);
+    }
+    .text-primary{
+        color: var(--primary);
+    }
+    .text-secondary{
+        color: var(--secondary);
+    }
+    .btn-bg-trans{
+        background-color: rgba(255, 255, 255, 0.27);
+    }
+    .btn-border{
+        border: 3px solid var(--secondary);
+    }
+    
+</style>
+<body class="bg-gray-50"> -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bitely</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
+</head>
+<style>
+    :root{
+        --primary: #B3241B;
+        --secondary: #E99838;
+    }
+    body{
+        font-family: 'Quicksand';
+    }
+    .bg-primary{
+        background-color: var(--primary);
+    }
+    .text-primary{
+        color: var(--primary);
+    }
+    .text-secondary{
+        color: var(--secondary);
+    }
+    .btn-bg-trans{
+        background-color: rgba(255, 255, 255, 0.27);
+    }
+    .btn-border{
+        border: 3px solid var(--secondary);
+    }
+    .glass {
+        box-shadow: 0 0 16px rgba(0, 0, 0, .05); 
+        background-color: rgba(255, 255, 255, 0.104);    
+        backdrop-filter: blur(3px);
+        text-shadow: 0 0 10px rgba(0, 0, 0, .086);
+    }
+    @media screen and (min-width: 768px){
+        .headText{
+            font-size: 38px;
+            line-height: 38px;
+        }
+    }
+    @media screen and (max-width: 767px){
+        nav{
+            transition: .4s ease;
+        }
+        .nav-collapsed{
+            margin-top: -110%;
+            transition: .4s ease;
+        }
+    }
+    
+</style>
+<body class="bg-gray-50">
+        <div class="w-full lg:hidden z-40 p-8 absolute" x-data="{ active: false }">
+            <div class="hamburger text-white bg-blue-500 rounded-lg float-right is-active mx-auto w-max" :class="{ 'hamburger--3dx': active == true}" @click="active = ! active">
+            <div class="hamburger-box" >
+              <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="absolute mx-auto w-full z-0 nav-collapsed">
+        <div class="mr-auto px-6 py-6">
+            <button class="border border-2 px-4 py-2 shadow-lg rounded-full"><i class="fa fa-2x text-white fa-chevron-left"></i></button>
+        </div>
+    </nav>
+    <script>
+        $('.hamburger').on('click', function(){
+            $('nav').toggleClass('nav-collapsed');
+        })
+    </script>
+
+    <header class="" style="height: 40vh; background-image: url('./img/konrad-wojciechowski-yoc5yt98osk-unsplash.jpg'); background-size: cover; background-position: center;">
+        <h1 class="pt-16 font-semibold text-white text-center" style="font-size: 100px;">FAQs</h1>
+        <h1 class="text-sm text-white text-center">Explore our frequently asked question</h1>
+    </header>
+        
+</body>
+</html>
