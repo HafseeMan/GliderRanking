@@ -94,52 +94,40 @@
     
 </style>
 <body class="bg-gray-50">
-        <div class="w-full lg:hidden z-40 p-8 absolute" x-data="{ active: false }">
-            <div class="hamburger text-white bg-blue-500 rounded-lg float-right is-active mx-auto w-max" :class="{ 'hamburger--3dx': active == true}" @click="active = ! active">
-            <div class="hamburger-box" >
-              <div class="hamburger-inner"></div>
-            </div>
-        </div>
-    </div>
 
-    <nav class="absolute mx-auto w-full z-0 nav-collapsed">
+    <nav class="absolute mx-auto w-full z-0">
         <div class="mr-auto px-6 py-6">
             <a href="./index.html"><button class="border border-2 px-4 py-2 shadow-lg rounded-full"><i class="fa fa-2x text-white fa-chevron-left"></i></button></a>
         </div>
     </nav>
-    <script>
-        $('.hamburger').on('click', function(){
-            $('nav').toggleClass('nav-collapsed');
-        })
-    </script>
 
     <header class="" style="height: 40vh; background-image: url('./img/konrad-wojciechowski-yoc5yt98osk-unsplash.jpg'); background-size: cover; background-position: center;">
         <h1 class="pt-16 font-semibold text-white text-center" style="font-size: 100px;">FAQs</h1>
         <h1 class="text-sm text-white text-center">Explore our frequently asked question</h1>
     </header>
 
-    <div class="w-full my-4 px-32 pt-16">
+    <div class="w-full my-4 lg:px-32 pt-16">
         <div x-data={show:false} class="rounded-sm">
-            <div class="border border-b-0 bg-gray-100 px-10 py-6" id="headingOne">
+            <div class="border border-b-0 bg-gray-100 px-2 text-sm lg:px-10 py-6" id="headingOne">
                 <button @click="show=!show" class="text-blue-500 hover:text-blue-700 focus:outline-none" type="button">
-                    <i class="fa fa-plus pr-4" x-show="show == false"></i>
-                    <i class="fa fa-minus pr-4" x-show="show == true"></i>
+                    <i class="fa fa-chevron-down pr-2 lg:pr-4" x-show="show == false"></i>
+                    <i class="fa fa-chevron-up pr-2 lg:pr-4" x-show="show == true"></i>
                     I flew but made a bad result, I don't want to upload the file
                 </button>
             </div>
-            <div x-show="show" class="border border-b-0 px-10 py-6">
+            <div x-show="show" class="border border-b-0 px-4 text-sm lg:px-10 py-6">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
         </div>
         <div x-data={show:false} class="rounded-sm">
-            <div class="border border-b-0 bg-gray-100 px-10 py-6" id="headingOne">
+            <div class="border border-b-0 bg-gray-100 px-2 text-sm lg:px-10 py-6" id="headingOne">
                 <button @click="show=!show" class="text-blue-500 hover:text-blue-700 focus:outline-none" type="button">
-                    <i class="fa fa-plus pr-4" x-show="show == false"></i>
-                    <i class="fa fa-minus pr-4" x-show="show == true"></i>
+                    <i class="fa fa-chevron-down pr-2 lg:pr-4" x-show="show == false"></i>
+                    <i class="fa fa-chevron-up pr-2 lg:pr-4" x-show="show == true"></i>
                     I flew but made a bad result, I don't want to upload the file
                 </button>
             </div>
-            <div x-show="show" class="border border-b-0 px-10 py-6">
+            <div x-show="show" class="border border-b-0 px-4 text-sm lg:px-10 py-6">
                 It doesn't matter if the flight hasn't been according to your expectations, every time you fly you earn points because it's not a competition for who comes first, the algorithm Is more complicated than you think.
                 <br>
                 <br>
@@ -150,14 +138,14 @@
             </div>
         </div>
         <div x-data={show:false} class="rounded-sm">
-            <div class="border border-b-0 bg-gray-100 px-10 py-6" id="headingOne">
+            <div class="border border-b-0 bg-gray-100 px-2 text-sm lg:px-10 py-6" id="headingOne">
                 <button @click="show=!show" class="text-blue-500 hover:text-blue-700 focus:outline-none" type="button">
-                    <i class="fa fa-plus pr-4" x-show="show == false"></i>
-                    <i class="fa fa-minus pr-4" x-show="show == true"></i>
+                    <i class="fa fa-chevron-down pr-2 lg:pr-4" x-show="show == false"></i>
+                    <i class="fa fa-chevron-up pr-2 lg:pr-4" x-show="show == true"></i>
                     I flew but made a bad result, I don't want to upload the file
                 </button>
             </div>
-            <div x-show="show" class="border border-b-0 px-10 py-6">
+            <div x-show="show" class="border border-b-0 px-4 text-sm lg:px-10 py-6">
                 It doesn't matter if the flight hasn't been according to your expectations, every time you fly you earn points because it's not a competition for who comes first, the algorithm Is more complicated than you think.
                 <br>
                 <br>
