@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,14 +30,95 @@
     .btn-border{
         border: 3px solid var(--secondary);
     }
+    
+</style>
+<body class="bg-gray-50"> -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bitely</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
+</head>
+<style>
+    :root{
+        --primary: #B3241B;
+        --secondary: #E99838;
+    }
+    body{
+        font-family: 'Quicksand';
+    }
+    .bg-primary{
+        background-color: var(--primary);
+    }
+    .text-primary{
+        color: var(--primary);
+    }
+    .text-secondary{
+        color: var(--secondary);
+    }
+    .btn-bg-trans{
+        background-color: rgba(255, 255, 255, 0.27);
+    }
+    .btn-border{
+        border: 3px solid var(--secondary);
+    }
     .glass {
         box-shadow: 0 0 16px rgba(0, 0, 0, .05); 
         background-color: rgba(255, 255, 255, 0.104);    
         backdrop-filter: blur(3px);
         text-shadow: 0 0 10px rgba(0, 0, 0, .086);
     }
+    @media screen and (min-width: 768px){
+        .headText{
+            font-size: 38px;
+            line-height: 38px;
+        }
+    }
+    @media screen and (max-width: 767px){
+        nav{
+            transition: .4s ease;
+        }
+        .nav-collapsed{
+            margin-top: -110%;
+            transition: .4s ease;
+        }
+    }
+    
 </style>
 <body class="bg-gray-50">
+        <div class="w-full lg:hidden z-40 p-8 absolute" x-data="{ active: false }">
+            <div class="hamburger text-white bg-blue-500 rounded-lg float-right is-active mx-auto w-max" :class="{ 'hamburger--3dx': active == true}" @click="active = ! active">
+            <div class="hamburger-box" >
+              <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="absolute mx-auto w-full z-0 nav-collapsed">
+        <div class="lg:bg-transparent bg-gray-50 lg:ml-auto lg:w-max lg:pt-10 pt-32 p-10">
+            <ul class="lg:flex lg:text-white items-center font-semibold">
+                <a href=""><li class="lg:px-8 py-2">Home</li></a>
+                <a href="./blog.html"><li class="lg:px-8 py-2">FAQs</li></a>
+                <a href="./about.html"><li class="lg:px-8 py-2">About</li></a>
+                <a href="./register.html"><li class="lg:px-8 py-2">Registration</li></a>
+                <li class="py-2"><button class="btn-border btn-bg-trans focus:outline-none hover:shadow-lg rounded-full px-8 py-3">Login</button></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $('.hamburger').on('click', function(){
+            $('nav').toggleClass('nav-collapsed');
+        })
+    </script>
+
     <header class="" style="height: 80vh; background-image: url('./img/konrad-wojciechowski-yoc5yt98osk-unsplash.jpg'); background-size: cover; background-position: center;">
 <div class="lg:p-32 w-full pt-32">
     <div class="w-max p-2 lg:ml-auto mx-auto text-white">
