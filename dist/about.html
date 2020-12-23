@@ -38,7 +38,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Bitely</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -93,23 +93,32 @@
     </nav>
 
     <header class="bg-blue-500" style="height: 40vh;">
-        <h1 class="pt-32 font-semibold text-5xl text-white headText text-center">About Us</h1>
+        <h1 class="pt-32 font-semibold text-3xl text-white headText text-center">How the Algorithm works</h1>
     </header>
 
-    <div class="lg:w-8/12 my-4 lg:px-32 px-6 pt-16">
-        <h1 class="text-2xl font-semibold py-6">Who we are</h1>
-        <h4>Gliding raking system is a platform to rank the skills of gliding pilots. It is based on an algorithm that evaluates the pilot's performance during each flight.
+    <div class="lg:w-full lg:flex my-4 lg:px-32 px-6 pt-16">
+        <div class="w-full">
+            
+        <h4 class="text-lg">Gliding raking system is a platform to rank the skills of gliding pilots. It is based on an algorithm that evaluates the pilot's performance during each flight.
+
             <br>
             <br>
             The full algorithm is based on the ELO rating but the details of the calculation are not published.
             <br>
             <br>
-            It is assigned a rank that varies according to the performance of the flight, to get a higher rank you must have perseverance and above all continuous training.
+            It is assigned a rank (see page rank) that varies according to the performance of the flight, to get a higher rank you must have perseverance and above all continuous training.
             <br>
             <br>
             The goal is to motivate pilots to fly but also to determine the degree of improvement.</h4>
-    </div>
+            <br>
+            Only the best pilots will be able to aspire to a higher rank. The algorithm is based on a bell-shaped distrubution. The only trick is to fly, fly and talent.
+        </div>
 
+            <div class="lg:8/12">
+                <img src="./img/graph.jpeg" alt="graph" class="w-8/12 mx-auto">
+            </div>
+            
+    </div>
     <div class="mb-auto mt-32 px-10 py-10 bg-gray-100">
         <div class="mx-auto w-max">
             <button class="px-3 py-2 bg-gray-200 hover:bg-gray-300 focus:outline-none rounded-full"><i class="fab fa-twitter text-blue-500"></i></button>
