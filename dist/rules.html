@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
+</head>
+<style>
+    body{
+        font-family: 'Quicksand';
+    }
+    
+</style>
+<body>
+    <nav class="absolute mx-auto w-full z-0">
+        <div class="mr-auto px-4 py-4">
+            <a href="./index.html"><button class="border focus:outline-none border-2 bg-blue-500 px-4 py-2 shadow-lg rounded-full"><i class="fa fa-2x text-white fa-chevron-left"></i></button></a>
+        </div>
+    </nav>
+    <header class="bg-blue-500" style="height: 40vh;">
+        <h1 class="pt-32 font-semibold text-3xl text-white headText text-center">Rules of the Systems</h1>
+    </header>
+    <div class="min-h-screen bg-gray-50 divide-y-2 lg:flex">
+        <article class="pb-8 mx-auto text-sm w-full lg:w-max pt-24 divide-y-2">
+                
+                <ul class="px-6">
+                   <h1 class="font-semibold mt-6 text-gray-500 text-left mb-2  text-xl">Flight loading</h1>
+                   <li>The algorithm is made to process by region.
+                   </li>
+                   <li>
+                    This means that per region you have time to load the flight by 21:00 LT (depending on your geographic region).
+                   </li>                   
+                   <h1 class="font-semibold mt-6 text-gray-500 text-left mb-2  text-xl">Data processing</h1>
+                   <li>
+                       At 21:30 LT the algorithm calculates and updates the rank and the various statistics.
+                   </li>
+                       
+                   <h1 class="font-semibold mt-6 text-gray-500 text-left mb-2  text-xl">Log data errors or false log data</h1>
+                   <li>
+                       In case of log errors, the result will not be taken into consideration. 
+                   </li>
+                   <li>
+                    In case of manipulation or cheating, the pilot will be disqualified from the platform.
+                   </li>
+                       
+               </ul>
+            </article>
+    </div>
+
+</body>
+</html>
